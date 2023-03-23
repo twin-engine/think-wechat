@@ -1,0 +1,42 @@
+{
+  "type": "think-admin-plugin",
+  "name": "rotoos/think-wechat",
+  "license": "Apache-2.0",
+  "description": "Wechat for DeAdmin",
+  "authors": [
+    {
+      "name": "rotoos",
+      "email": "87291030@qq.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.1",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "ext-mbstring": "*",
+    "rotoos/de-install": "^1.0||dev-master",
+    "rotoos/think-core": "^6.1||v6.0.x-dev",
+    "zoujingli/wechat-developer": "^1.2||dev-master"
+  },
+  "extra": {
+    "plugin": {
+      "copy": {
+        "src": "!app/wechat",
+        "stc/database": "database/migrations"
+      },
+      "clear": true
+    },
+    "think": {
+      "services": [
+        "app\\wechat\\Service"
+      ]
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "rotoos/de-install": true
+    }
+  }
+}
