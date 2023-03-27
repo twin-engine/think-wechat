@@ -19,7 +19,6 @@ class News extends Controller
     /**
      * 微信图文管理
      * @auth true
-     * @menu true
      */
     public function index()
     {

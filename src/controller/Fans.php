@@ -19,7 +19,6 @@ class Fans extends Controller
     /**
      * 微信用户管理
      * @auth true
-     * @menu true
      * @throws \think\db\exception\DataNotFoundException
      * @throws \think\db\exception\DbException
      * @throws \think\db\exception\ModelNotFoundException

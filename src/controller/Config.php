@@ -17,10 +17,7 @@ class Config extends Controller
     /**
      * 微信授权配置
      * @auth true
-     * @menu true
-     * @throws \think\db\exception\DataNotFoundException
-     * @throws \think\db\exception\DbException
-     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\admin\Exception
      */
     public function options()
     {
@@ -77,9 +74,7 @@ class Config extends Controller
      * 微信第三方平台接口配置
      * @auth true
      * @return void
-     * @throws \think\db\exception\DataNotFoundException
-     * @throws \think\db\exception\DbException
-     * @throws \think\db\exception\ModelNotFoundException
+     * @throws \think\admin\Exception
      */
     public function options_jsonrpc()
     {
@@ -105,11 +100,7 @@ class Config extends Controller
     /**
      * 微信支付配置
      * @auth true
-     * @menu true
      * @throws \think\admin\Exception
-     * @throws \think\db\exception\DataNotFoundException
-     * @throws \think\db\exception\DbException
-     * @throws \think\db\exception\ModelNotFoundException
      */
     public function payment()
     {
@@ -141,9 +132,6 @@ class Config extends Controller
      * 微信支付修改
      * @auth true
      * @throws \think\admin\Exception
-     * @throws \think\db\exception\DataNotFoundException
-     * @throws \think\db\exception\DbException
-     * @throws \think\db\exception\ModelNotFoundException
      */
     public function payment_save()
     {
