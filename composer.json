@@ -16,7 +16,7 @@
     "ext-openssl": "*",
     "ext-mbstring": "*",
     "rotoos/de-install": "^1.0||dev-master",
-    "rotoos/think-core": "^6.1||v6.0.x-dev",
+    "rotoos/think-core": "^6.1||dev-master",
     "zoujingli/wechat-developer": "^1.2||dev-master"
   },
   "extra": {
